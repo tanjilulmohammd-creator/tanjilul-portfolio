@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TANJILUL - Student | Gamer | BNCC">
+    <meta property="og:title" content="TANJILUL | Portfolio">
+    <meta property="og:description" content="Student, Gamer & BNCC Member">
+    <meta property="og:image" content="assets/profile.jpg">
+    <meta name="theme-color" content="#030712">
+    <link rel="icon" href="assets/profile.jpg">
+    <title>TANJILUL | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Cursor -->
+    <div class="cursor-main" id="cursorMain"></div>
+    <div class="cursor-trail" id="cursorTrail"></div>
+
+    <!-- Animated Background -->
+    <canvas id="bgCanvas"></canvas>
+
+    <!-- Splash Screen -->
+    <div class="splash-screen" id="splashScreen">
+        <div class="splash-inner">
+            <div class="splash-ring"></div>
+            <p class="splash-text">Tap here for surprising</p>
+            <p class="splash-sub">🎵 Music will start automatically</p>
+            <div class="splash-dots">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <div class="container">
+        
+        <div class="card" id="mainCard">
+            
+            <!-- Profile -->
+            <div class="profile">
+                <div class="avatar">
+                    <div class="avatar-glow-ring"></div>
+                    <img src="assets/profile.jpg" alt="TANJILUL" class="avatar-img">
+                    <div class="avatar-status"></div>
+                </div>
+                <h1 class="name">TANJILUL</h1>
+                <div class="title-box">
+                    <span class="title-word" id="titleWord">🎓 Student</span>
+                </div>
+                <p class="location">📍 Chittagong, Bangladesh</p>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Music Player -->
+            <div class="music-section">
+                <span class="section-label">🎧 Now Playing</span>
+                <div class="music-card">
+                    <div class="music-eq" id="musicEq">
+                        <span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                    <div class="music-info">
+                        <p class="song-title" id="songTitle">I just got</p>
+                        <p class="song-sub" id="songStatus">Paused</p>
+                    </div>
+                    <button class="play-btn" id="playBtn">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+                
+                <!-- Progress Bar + Time -->
+                <div class="music-controls">
+                    <span class="time" id="currentTime">0:00</span>
+                    <div class="progress-bar" id="progressBar">
+                        <div class="progress-fill" id="progressFill"></div>
+                        <div class="progress-thumb" id="progressThumb"></div>
+                    </div>
+                    <span class="time" id="totalTime">0:00</span>
+                </div>
+                
+                <audio id="audio" loop preload="auto">
+                    <source src="music/song.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Social -->
+            <div class="social-section">
+                <a href="https://facebook.com/" target="_blank" class="s-btn s-fb">
+                    <div class="s-glow"></div>
+                    <div class="s-content">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Facebook</span>
+                        <i class="fas fa-chevron-right s-arrow"></i>
+                    </div>
+                </a>
+                <a href="https://instagram.com/" target="_blank" class="s-btn s-ig">
+                    <div class="s-glow"></div>
+                    <div class="s-content">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                        <i class="fas fa-chevron-right s-arrow"></i>
+                    </div>
+                </a>
+                <a href="https://wa.me/880" target="_blank" class="s-btn s-wa">
+                    <div class="s-glow"></div>
+                    <div class="s-content">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                        <i class="fas fa-chevron-right s-arrow"></i>
+                    </div>
+                </a>
+            </div>
+
+            <p class="footer">© 2024 <strong>TANJILUL</strong></p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
